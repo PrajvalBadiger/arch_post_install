@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=DWM
+Comment=Dynamic window manager
+Exec=/home/.local/bin/dwm_startup
+Icon=dwm
+Type=XSession
