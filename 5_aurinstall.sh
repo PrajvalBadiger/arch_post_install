@@ -10,11 +10,15 @@ aurpkgs=(
 )
 
 # install yay form github
-git clone https://aur.archlinux.org/yay.git /opt/yay-git/
-cd /opt/yay-git/
-makepkg -si
+install_yay () {
+	git clone https://aur.archlinux.org/yay.git /opt/yay-git/
+	cd /opt/yay-git/
+	makepkg -si
+}
 
-for AUR in "${aurpkgs[@]}"; do
+# install_yay
+
+for PKG in "${aurpkgs[@]}"; do
 	echo " :: INSTALLING: ${PKG}"
 	yay -S "$PKG" --noconfirm --needed
 done
