@@ -16,7 +16,7 @@ install_yay () {
 	makepkg -si
 }
 
-# install_yay
+install_yay
 
 for PKG in "${aurpkgs[@]}"; do
 	echo " :: INSTALLING: ${PKG}"
