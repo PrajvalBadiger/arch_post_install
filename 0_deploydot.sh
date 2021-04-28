@@ -12,7 +12,7 @@ git clone https://github.com/PrajvalBadiger/dotfiles ${dotdir}
 rm $HOME/.bashrc $HOME/.bash_aliases $HOME/.profile
 
 cd ${dotdir}
-stow bash config local tmux vim 
+stow bash config local tmux vim -v
 
 echo
 echo Done!

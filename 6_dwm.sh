@@ -12,7 +12,7 @@
 
 
 # confirmation prompt
-confirm() {
+confirm () {
 
 	read -r -p "${1:- :: Proceed with installation? [Y/n]} " response
 	case "$response" in
