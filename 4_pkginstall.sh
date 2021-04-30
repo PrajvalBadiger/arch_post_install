@@ -27,18 +27,24 @@ pacpkgs=(
 	'htop'
 	'lolcat'
 	'mpv'
+
+	# fonts
 	'noto-fonts'
+	'noto-fonts-emoji'
+
 	'ntp'
 	'openssh'
+	'ntfs-3g' # ntfs filesystem support
 	'parted'
 	'python'
 	'rsync'
 	'steam'
+	'scrot' # screenshot
 	'stow'
 	'sxhkd'
 	'sxiv'
 	'telegram-desktop'
-	'thunar' # 'nemo'
+	'thunar' # alternate 'nemo'
 	'tmux'
 	'unclutter'
 	'unrar'
@@ -48,6 +54,12 @@ pacpkgs=(
 	'youtube-dl'
 	'zathura'
 	'zathura-pdf-mupdf'
+
+	# auto start services for artix 
+	# 'ntp'
+	# 'ntp-runit'
+	# 'networkmanager'
+	# 'networkmanager-runit'
 
 )
 
