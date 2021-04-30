@@ -10,6 +10,7 @@ sudo pacman -S stow --noconfirm --needed
 git clone https://github.com/PrajvalBadiger/dotfiles ${dotdir}
 
 rm $HOME/.bashrc $HOME/.bash_aliases $HOME/.profile
+mkdir $HOME/.config $HOME/.local/
 
 cd ${dotdir}
 stow bash config local tmux vim -v
