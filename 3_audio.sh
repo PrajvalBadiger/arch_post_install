@@ -6,9 +6,11 @@ echo
 
 PKGS=(
 	#audio
+	'asoundconf'
 	'alsa-utils'
 	'alsa-plugin'
 	'pulseaudio'
+	'pulseaudio-alsa'
 	'pavucontrol'
 
 	# bluetooth
