@@ -40,7 +40,7 @@ sudo systemctl enable NetworkManager.service
 sudo systemctl start NetworkManager.service
 
 # dwm startup with a auto script
-
+sudo mkdir /usr/share/xsessions/
 sudo cp ./dwm.desktop /usr/share/xsessions/dwm.desktop
 
 # enable touchpad click

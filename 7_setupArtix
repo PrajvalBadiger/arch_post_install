@@ -1,0 +1,45 @@
+#!/bin/sh
+
+# Note: run this script once you boot into the system
+
+# enable lid close to suspend
+
+echo
+echo "Setting laptop lid close to suspend"
+
+sudo sed -i -e 's|[# ]*HandleLidSwitch[ ]*=[ ]*.*|HandleLidSwitch=suspend|g' /etc/elogind/logind.conf
+
+# enable bluetooth demon
+
+echo
+echo "Enabling bluetooth daemon and setting it to auto-start"
+
+ln -s /etc/runit/sv/bluetoothd/ /run/runit/service/bluetoothd # artix linux
+
+# setting clock via Network
+
+echo
+echo "Enabling Network Time Protocol so clock will be set via the network"
+
+sudo ntpd -qg
+ln -s /etc/runit/sv/ntpd/ /run/runit/service/ntpd/ # artix linux
+
+
+# enable network manager
+
+echo
+echo "Enabling Network Manager"
+ln -s /etc/runit/sv/NetworkManager/ /run/runit/service/NetworkManager # artix linux
+
+# dwm startup with a auto script
+
+sudo mkdir /usr/share/xsessions/
+sudo cp ./dwm.desktop /usr/share/xsessions/dwm.desktop
+
+# enable touchpad click
+
+sudo cp ./30-touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
+
+echo
+echo Done!
+echo
