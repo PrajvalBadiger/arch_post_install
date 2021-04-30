@@ -2,21 +2,26 @@
 
 aurpkgs=(
 
+	'brave-browser'
 	'compton-tryone-git'
 	'libxft-bgra-git'
 	'ttf-comic-mono-git'
-	'ufetch-git' # 'neofetch'
+	'neofetch'
 
 )
 
 # install yay form github
 install_yay () {
-	git clone https://aur.archlinux.org/yay.git /opt/yay-git/
-	cd /opt/yay-git/
+
+	install_dir="$HOME/.local/src/yay-git/"
+	mkdir $install_dir
+	git clone https://aur.archlinux.org/yay-git.git  $install_dir
+	cd $install_dir
 	makepkg -si
+
 }
 
-install_yay
+install_yay &&
 
 for PKG in "${aurpkgs[@]}"; do
 	echo " :: INSTALLING: ${PKG}"
