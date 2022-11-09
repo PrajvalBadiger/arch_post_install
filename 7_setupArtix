@@ -14,7 +14,7 @@ sudo sed -i -e 's|[# ]*HandleLidSwitch[ ]*=[ ]*.*|HandleLidSwitch=suspend|g' /et
 echo
 echo "Enabling bluetooth daemon and setting it to auto-start"
 
-ln -s /etc/runit/sv/bluetoothd/ /run/runit/service/bluetoothd # artix linux
+ln -s /etc/runit/sv/bluetoothd/ /run/runit/service/bluetoothd 
 
 # setting clock via Network
 
@@ -22,14 +22,14 @@ echo
 echo "Enabling Network Time Protocol so clock will be set via the network"
 
 sudo ntpd -qg
-ln -s /etc/runit/sv/ntpd/ /run/runit/service/ntpd/ # artix linux
+ln -s /etc/runit/sv/ntpd/ /run/runit/service/ntpd/ 
 
 
 # enable network manager
 
 echo
 echo "Enabling Network Manager"
-ln -s /etc/runit/sv/NetworkManager/ /run/runit/service/NetworkManager # artix linux
+ln -s /etc/runit/sv/NetworkManager/ /run/runit/service/NetworkManager 
 
 # dwm startup with a auto script
 
