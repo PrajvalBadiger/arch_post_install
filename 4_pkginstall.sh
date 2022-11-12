@@ -10,6 +10,8 @@
 pacpkgs=(
 
 	'alacritty'
+	'autocutsel'
+	'clipmenu'
 	'base-devel'
 	'bash-completion'
 	'bc'
