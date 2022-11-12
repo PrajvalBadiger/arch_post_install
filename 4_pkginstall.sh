@@ -16,7 +16,7 @@ pacpkgs=(
 	'bash-completion'
 	'bc'
 	'bluez-utils'
-	'brave'
+	'firefox'
 	'cups'
 	'cups-pdf'
 	'curl'
@@ -33,6 +33,7 @@ pacpkgs=(
 	# fonts
 	'noto-fonts'
 	'noto-fonts-emoji'
+	'terminus-font'
 
 	'ntp'
 	'openssh'
@@ -40,7 +41,6 @@ pacpkgs=(
 	'parted'
 	'python'
 	'rsync'
-	'steam'
 	'scrot' # screenshot
 	'stow'
 	'sxhkd'
