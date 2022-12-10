@@ -29,11 +29,13 @@ pacpkgs=(
 	'htop'
 	'lolcat'
 	'mpv'
+	'python-pywal'
 
 	# fonts
 	'noto-fonts'
 	'noto-fonts-emoji'
 	'terminus-font'
+	'otf-hermit'
 
 	'ntp'
 	'openssh'
@@ -56,6 +58,8 @@ pacpkgs=(
 	'youtube-dl'
 	'zathura'
 	'zathura-pdf-mupdf'
+	'zsh'
+	'zsh-syntax-highlighting'
 
 	# auto start services for artix 
 	# 'ntp'

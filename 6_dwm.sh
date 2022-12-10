@@ -30,15 +30,10 @@ confirm () {
 install_dwm () {
 
 	mkdir -vp $src_dir/dwm_build
-	git clone $mygiturl/dwm $src_dir/dwm_build/dwm
-	git clone $mygiturl/my_dwm_patches $src_dir/dwm_build/my_dwm_patches
+	git clone $mygiturl/dwm-6.4 $src_dir/dwm_build/dwm
 
 	cd $src_dir/dwm_build/dwm
-	suckbranch dwm &&
-		suckreset &&
-		suckapply dwm &&
-		suckmerge &&
-		make && sudo make clean install || exit 1
+	make && sudo make clean install || exit 1
 
 }
 
