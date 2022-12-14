@@ -2,10 +2,7 @@
 
 aurpkgs=(
 
-#	'brave-browser'
-#	'compton-tryone-git'
 	'libxft-bgra-git'
-#	'ttf-comic-mono-git'
 	'neofetch'
 	'picom-ibhagwan-git'
 	'zsh-fast-syntax-highlight-git'
