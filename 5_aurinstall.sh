@@ -2,11 +2,13 @@
 
 aurpkgs=(
 
-	'brave-browser'
-	'compton-tryone-git'
+#	'brave-browser'
+#	'compton-tryone-git'
 	'libxft-bgra-git'
-	'ttf-comic-mono-git'
+#	'ttf-comic-mono-git'
 	'neofetch'
+	'picom-ibhagwan-git'
+	'zsh-fast-syntax-highlight-git'
 
 )
 
@@ -21,7 +23,7 @@ install_yay () {
 
 }
 
-install_yay &&
+#install_yay &&
 
 for PKG in "${aurpkgs[@]}"; do
 	echo " :: INSTALLING: ${PKG}"

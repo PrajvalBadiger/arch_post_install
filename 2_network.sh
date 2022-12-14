@@ -8,6 +8,9 @@ PKGS=(
 	
 	'wpa_supplicant'
 	'networkmanager'
+	'python-gobject'
+	'gtk3'
+	'jq'
 
 )
 
