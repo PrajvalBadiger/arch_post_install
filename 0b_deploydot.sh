@@ -13,7 +13,7 @@ rm -f $HOME/.bashrc $HOME/.bash_aliases $HOME/.profile
 mkdir $HOME/.config $HOME/.local/
 
 cd ${dotdir}
-stow bash config local tmux vim xinit -v
+stow bash config local tmux vim x11 zsh -v
 
 echo
 echo Done!
