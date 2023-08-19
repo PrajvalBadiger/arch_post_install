@@ -1,15 +1,6 @@
 #!/bin/sh
 
-# installation script for dwm with my patches and dwmblocks
-#+ also installs dmenu with my patches
-#+ required -> my scripts from dotfiles/local and git
-
-# scripts required
-#	1. suckbranch
-#	2. suckreset
-#	3. suckapply
-#	4. suckmerge
-
+# installation script for my fork of dwm, dwmblocks and dmenu
 
 # confirmation prompt
 confirm () {
@@ -54,11 +45,7 @@ install_dmenu () {
 	git clone $mygiturl/my_dmenu_patches $src_dir/dmenu_build/my_dmenu_patches
 
 	cd $src_dir/dmenu_build/dmenu
-	suckbranch dmenu &&
-		suckreset &&
-		suckapply dmenu &&
-		suckmerge &&
-		make && sudo make clean install || exit 1
+    make && sudo make clean install || exit 1
 
 }
 
